@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>뿌엥 자바스크립트 예제</h1>
+		
+		<div>
+		
+			<button id= "btn" type = "button">JS 테스트</button>
+			<h2 id= "display">이름 출력 영역</h2>
+		
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+	
+	window.onload = function(){
+		
+		var testButton = document.getElementById("btn");
+		var testArea = document.getElementById("display")
+		
+		testButton.onclick = function() {
+			console.log("버튼 클릭")	
+			testArea.innerHTML = '<font color="red">홍길동</font>'
+		};
+		
+	}
+	
+	</script>
+	
+	
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	
+	<body>
+		<h1>뿌엥 자바스크립트 예제</h1>
+	</body>
+	
+	<script type="text/javascript">
+	
+		console.log("*****배열*****")
+	
+		//var array = [273, 32, 103, 57, 52];
+		
+		var array = [];
+		
+		array[0] = 273
+		
+		console.log(array[0]);
+		console.log(array[1]);
+		console.log(array[2]);
+		console.log(array[3]);
+		console.log(array[4]);
+		console.log(array[5]);
+		
+		for (var i = 0; i<array.length; i++) {
+			
+			console.log(array[i]);	
+			
+		}
+	</script>
+	
+	
+	<script type="text/javascript">
+	
+		console.log("*****배열 자료형*****")
+	
+		var array2 = [];
+		array2[0] = 1;
+		array2[1] = 2.5;
+		array2[2] = 'A';
+		array2[3] = "안녕하세요";
+		
+	for (var i = 0; i<array2.length; i++) {
+				
+				console.log(array2[i]);	
+				
+	}
+		
+	var array3 = [273, "Hello", true, sum(5,2), [111, 222], function(){return 3+7}];
+	console.log(array3[0]);
+	console.log(array3[1]);
+	console.log(array3[2]);
+	console.log(array3[3]);
+	console.log(array3[4][0]);
+	console.log(array3[4][1]);
+	console.log(array3[5]());
+	
+	function sum(a,b) {
+		return a+b;
+	}
+	
+	var intArray = [];
+	
+	intArray.push(3);//추가 시키기
+	console.log(intArray);
+	
+	intArray.push(3432);
+	console.log(intArray);
+	
+	intArray.push(34326);
+	console.log(intArray);
+	
+	intArray.pop(); // 맨뒤에꺼 뺴기
+	console.log(intArray);
+		
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

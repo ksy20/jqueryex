@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+	
+		<h1>뿌엥 자바스크립트 예제</h1>
+		
+	</body>
+	
+	<script type="text/javascript">
+	
+	/*
+		var name = "global";
+	
+		function checkscope(){
+			
+			var name = "local";
+			console.log(name);
+
+		}
+		
+		checkscope();
+		
+		console.log(name);
+		*/
+		
+		var name = "global";
+		
+		function checkscope(){
+			
+			name = "local";
+			name2 = "로컬" //밖에 미리 변수를 선언 한게 아니라면 var를 명확하게 적어줘야한다
+			//왜냐 이렇게 쓰면 이 함수 밖에다가 변수 선언이 되기때문 바꾸고 싶으면 return 해주기
+		}
+	
+		checkscope();
+		console.log(name);
+		console.log(name2)
+		
+	</script>
+</html>

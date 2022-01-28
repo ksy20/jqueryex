@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	
+	<body>
+		<h1>뿌엥 자바스크립트 예제</h1>
+	</body>
+	
+	<script type="text/javascript">
+	
+		function testA(){
+			console.log("testA()함수실행")
+		}
+		
+		testA();
+		
+		//기명 함수는 실행을 먼저 할 수 있다
+		testB();
+		
+		function testB(){
+			console.log("testB()함수실행")
+		}
+		
+		//둘다됨
+		
+		//이름이 없는 익명함수를 변수에 넣을 수 있다.(동작을 변수 안에 넣는다)
+		//자바스크립트에는 변수에 리스트, 배열 모든 걸 다 넣을 수 있음.
+		var anony = function() {
+			console.log("익명함수 실행");
+		}
+		
+		//()으로 실행
+		anony();
+	
+		//익명함수는 변수 실행을 먼저하는 것이 불가능
+	</script>
+</html>
